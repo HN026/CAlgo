@@ -46,6 +46,26 @@ TreeNode* Deletion(TreeNode *root, int key){
     queue<TreeNode *> q;
     q.push(root);
 
+    while(!q.empty()){
+        temp = q.front();
+        q.pop();
+
+        if(temp->key == key) {
+            key_node = temp;
+        }
+        if (temp->left!=NULL) {
+            last = temp; // Storing the parent node
+            q.push(temp->left);
+        }
+        if(temp->right!=NULL){
+            last = temp;  // Storing the parent node
+            q.push(temp->right);
+        }
+        if (key_node != NULL) {
+            key_node->key = temp->key;   // Replacing the key node's data to deepest node's data
+        }
+    }
+
 }
 
 
