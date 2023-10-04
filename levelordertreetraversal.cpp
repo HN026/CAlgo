@@ -47,7 +47,7 @@ class BinaryTree {
         }
     }
 
-    void levelOrder() {
+void levelOrder() {
         if(root==NULL){
             return;
         }
