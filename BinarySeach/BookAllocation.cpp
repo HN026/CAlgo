@@ -57,9 +57,9 @@ int BookAllocation(vector<int> &a, int n, int m)
 
 int main()
 {
-    int n = 4;
-    int m = 2;
-    vector<int> a = {12,34,67,90};
+    int n = 5;
+    int m = 4;
+    vector<int> a = {25,46,28,49,24};
 
     cout<<BookAllocation(a,n,m);
 
