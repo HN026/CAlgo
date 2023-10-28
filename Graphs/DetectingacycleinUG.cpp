@@ -13,6 +13,7 @@ bool detect(int src, vector<int> adj[], int vis[]){
     while(!q.empty()){
         int node = q.front().first;
         int parent = q.front().second;
+        q.pop();
 
         for(auto adjNode: adj[node]){
             if(!vis[adjNode]){
