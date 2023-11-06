@@ -1,0 +1,2 @@
+Recursion means top down: i.e from top to base case.
+Tabulation means bottom to top
