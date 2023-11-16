@@ -6,6 +6,8 @@ using namespace std;
 // TC : O(m*n)
 // SC : O(n)
 
+// Temp represents same row and dp represents previour row in Space optimization.
+
 int countWays(int m, int n){
     vector<int> dp(n, 0);
     for(int i = 0; i<m; i++){
@@ -18,8 +20,8 @@ int countWays(int m, int n){
             int up = 0;
             int left = 0;
 
-            if(i>0) up = dp[j];
-            if(j>0) left = temp[j-1];
+            if(i>0) up = dp[j]; // Previous row 
+            if(j>0) left = temp[j-1]; // same row
 
             temp[j] = up + left;    
         }
