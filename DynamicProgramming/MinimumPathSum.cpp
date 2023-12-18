@@ -27,7 +27,6 @@ int minSum(vector<vector<int>> &grid){
     return f(m-1, n-1, grid, dp);
 }
 
-
 int main(){
     vector<vector<int>> grid {
         {5, 9, 6},
