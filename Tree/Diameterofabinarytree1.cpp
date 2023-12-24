@@ -2,50 +2,65 @@
 // It is not necessary that it passes through the node.
 // Time complexity: O(N^2)
 // Auxilary Space: O(N) for call stack
+     
 
 #include <iostream>
+#include <vector>
+
 using namespace std;
 
-class TreeNode {
-    public:
-    int data;
+struct TreeNode{
+    int val;
     TreeNode *left;
     TreeNode *right;
-    TreeNode (int data){
-        this->data = data;
+    TreeNode(){
+        val = 0;
+        left = NULL;
+        right = NULL;
+    }
+    TreeNode(int x){
+        val = x;
         left = NULL;
         right = NULL;
     }
 };
 
+
 int height(TreeNode *root){
-    if(root==NULL){
-        return 0;
-    }
+    if(root==NULL) return 0;
+
     int left = height(root->left);
     int right = height(root->right);
-    return max(left,right) + 1;
+
+    return max(left, right)+1;
 }
 
-int diameter(TreeNode *root){
-    if(root==NULL){
-        return 0;
-    }
-    int lheight = height(root->left);
-    int rheight = height(root->right);
 
-    int ldiameter = diameter(root->left);
-    int rdiameter = diameter(root->right);
-    return max(lheight + rheight + 1, max(ldiameter, rdiameter));
+int DiameterOfTheTree(TreeNode *root){
+    if(root==NULL) return 0;
+
+    int left = height(root->left);
+    int right = height(root->right);
+
+    int leftDiameter = DiameterOfTheTree(root->left);
+    int rightDiameter = DiameterOfTheTree(root->right);
+
+    return max(left+right, max(leftDiameter, rightDiameter));
 }
+
 
 int main(){
+
     TreeNode *root = new TreeNode(1);
     root->left = new TreeNode(2);
     root->right = new TreeNode(3);
     root->left->left = new TreeNode(4);
     root->left->right = new TreeNode(5);
 
-    cout<<diameter(root)<<endl;
+
+    int ans = DiameterOfTheTree(root);
+    cout<<height(root)<<endl;
+    cout<<ans<<endl;
+
     return 0;
 }
