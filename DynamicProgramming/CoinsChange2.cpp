@@ -20,8 +20,8 @@ int change(int amount, vector<int> &coins){
 }
 
 int main(){
-    vector<int> coins = {1,2,5};
-    int amount = 5;
+    vector<int> coins = {2,3,5};
+    int amount = 9;
 
     int ans = change(amount, coins);
     cout<<ans<<endl;
