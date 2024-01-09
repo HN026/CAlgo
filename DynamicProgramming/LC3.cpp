@@ -22,8 +22,8 @@ int LongestCommonSubseq(string s, string t){
 }
 
 int main(){
-    string s = "abc";
-    string t = "def";
+    string s = "aabcc";
+    string t = "aadbbcbcac";
 
     int ans = LongestCommonSubseq(s, t);
     cout<<ans<<endl;
