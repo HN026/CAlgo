@@ -38,7 +38,7 @@ void solve(vector<vector<char>> &board){
             dfs(0, i, vis, board);
         }
 
-        // first col
+        // last row
         if(!vis[n-1][i] && board[n-1][i] == 'O'){
             dfs(n-1, i, vis, board);
         }

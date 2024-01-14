@@ -2,48 +2,45 @@
 #include <vector>
 #include <queue>
 
-// Using BFS
-
 using namespace std;
 
-bool detect(int src, vector<int> adj[], int vis[]){
-    vis[src] = 1;
+bool BFS(int node, vector<int> adj[], vector<int> &vis){
+    vis[node] = 1;
     queue<pair<int, int>> q;
-    q.push({src, -1});
+    q.push({node, -1});
     while(!q.empty()){
-        int node = q.front().first;
+        int currentNode = q.front().first;
         int parent = q.front().second;
-        q.pop();
 
-        for(auto adjNode: adj[node]){
+        for(auto adjNode: adj[currentNode]){
             if(!vis[adjNode]){
+                q.push({adjNode, currentNode});
                 vis[adjNode] = 1;
-                q.push({adjNode, node});
             }
-            else if (parent != adjNode){
-                return true;
+            else if(adjNode != parent){
+                return true; // Yes it's a cycle
             }
         }
     }
     return false;
 }
 
-
-bool detectCycle(vector<int> adj[]){
-    int vis[5] = {0};
-    for(int i = 0; i<5; i++){
+bool isCycle(vector<int> adj[], int V){
+    vector<int> vis(V, 0);
+    vis[0] = 1;
+    for(int i = 0; i<V; i++){
         if(!vis[i]){
-            if(detect(i, adj, vis)){
-                return true;
-            }
+            if(BFS(i, adj, vis)) return true;
         }
     }
     return false;
 }
+
 
 int main(){
-    vector<int> adj[] = {{4,4}, {0,1}, {1,2}, {2,3}, {3,0}};
-    bool ans = detectCycle(adj);
+    int V = 8;
+    vector<int> adj[] = {{},{2,3},{1,5},{1,4,6},{3},{2,7},{3,7},{5,6}};
+    bool ans = isCycle(adj, 8);
     cout<<ans<<endl;
     return 0;
 }
