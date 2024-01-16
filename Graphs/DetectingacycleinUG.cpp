@@ -4,35 +4,37 @@
 
 using namespace std;
 
-bool BFS(int node, vector<int> adj[], vector<int> &vis){
+bool bfs(int node, vector<int> adj[], vector<int> &vis){
     vis[node] = 1;
     queue<pair<int, int>> q;
     q.push({node, -1});
+
     while(!q.empty()){
         int currentNode = q.front().first;
         int parent = q.front().second;
 
         for(auto adjNode: adj[currentNode]){
             if(!vis[adjNode]){
-                q.push({adjNode, currentNode});
                 vis[adjNode] = 1;
+                q.push({adjNode, currentNode});
             }
-            else if(adjNode != parent){
-                return true; // Yes it's a cycle
-            }
+            else if(adjNode != parent) return true;
         }
     }
-    return false;
+    return false;            
 }
+
 
 bool isCycle(vector<int> adj[], int V){
     vector<int> vis(V, 0);
     vis[0] = 1;
+
     for(int i = 0; i<V; i++){
         if(!vis[i]){
-            if(BFS(i, adj, vis)) return true;
+            if(bfs(i, adj, vis)) return true;
         }
     }
+
     return false;
 }
 

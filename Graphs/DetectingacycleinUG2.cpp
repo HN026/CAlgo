@@ -4,25 +4,27 @@
 
 using namespace std;
 
-bool DFS(int node, int parent, vector<int> adj[], vector<int> &vis){
+bool dfs(int node, int parent, vector<int> &vis, vector<int> adj[]){
     vis[node] = 1;
+
     for(auto adjNode: adj[node]){
         if(!vis[adjNode]){
-            DFS(adjNode, node, adj, vis);
+            if(dfs(adjNode, node, vis, adj)) return true;
         }
-        else if(adjNode != parent){
-            return true;
-        }
+        else if(adjNode != parent) return true;
     }
+
     return false;
 }
+
 
 bool isCycle(vector<int> adj[], int V){
     vector<int> vis(V, 0);
     vis[0] = 1;
+
     for(int i = 0; i<V; i++){
         if(!vis[i]){
-            if(DFS(i, -1, adj, vis)) return true;
+            if(dfs(i, -1, vis, adj)) return true;
         }
     }
     return false;

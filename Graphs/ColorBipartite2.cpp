@@ -3,42 +3,32 @@
 
 using namespace std;
 
-bool dfs(int node, int col, int Color[], vector<int> adj[]){
-    Color[node] = col;
+// A bipartite graph is a graph whose vertices can be divided into two disjoint sets such that no two vertices within the same set are adjacent.
 
-    for (auto it: adj[node]){
-        if(Color[it]==-1){
-            if(dfs(it, !col, Color,adj)==false){
-                return false;
-            }
-            else if (Color[it]==col){
-                return false;
-            }
+bool check(int node, int col, vector<int> adj[], vector<int> &color){
+    color[node] = col;
+
+    for(auto it: adj[node]){
+        if(color[it]==-1){
+            if(!check(it, !col, adj, color)) return false;
         }
+        else if(color[it]==color[node]) return false;
     }
+
     return true;
 }
 
 
 bool isBipartite(int V, vector<int> adj[]){
-    int Color[4];
-    for(int i = 0; i<V; i++){
-        Color[i] = -1;
-    }
+    vector<int> color(V, -1);
 
-    for(int i = 0; i<4; i++){
-        if(Color[i]==-1){
-            if(dfs(i,0,Color,adj)==false){
-                return false;
-            }
+    for(int i = 0; i<V; i++){
+        if(color[i]==-1){
+            if(!check(i, 0, adj, color)) return false;
         }
     }
     return true;
 }
-
-
-
-
 
 int main() {
     int V = 4; 
