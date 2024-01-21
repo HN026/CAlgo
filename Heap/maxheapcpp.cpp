@@ -14,7 +14,7 @@ using namespace std;
 
 int main(){
     
-    priority_queue<int, vector<int>, less<int>> maxHeap;
+    priority_queue<int> maxHeap; // Priority Queue in default is MaxHeap
 
     maxHeap.push(10);
     maxHeap.push(30);
