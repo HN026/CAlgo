@@ -4,41 +4,54 @@
 
 using namespace std;
 
-void toposort(int node, vector<pair<int,int>> adj[], vector<int> &vis, stack<int> &st){
+// O(N+m)
+// Topoligical Sorting using DFS Algo
+void topologicalSort(int node, vector<pair<int, int>> adj[], vector<int> &vis, stack<int> &st){
     vis[node] = 1;
 
     for(auto it: adj[node]){
-        if(!vis[it.first]) toposort(it.first,adj,vis, st);
+        int v = it.first;
+        if(!vis[v]){
+            topologicalSort(v, adj, vis, st);
+        }
     }
 
     st.push(node);
 }
+
 vector<int> shortestPathInDAG(int n, int m, vector<vector<int>> &edges)
 {
-    vector<pair<int,int>> adj[n];
-    for(auto it: edges) adj[it[0]].push_back({it[1], it[2]});
+    vector<pair<int, int>> adj[n];
+    for(int i = 0; i<m; i++){
+        int u = edges[i][0];
+        int v = edges[i][1];
+        int wt = edges[i][2];
+        adj[u].push_back({v, wt});
+    }
 
+    vector<int> vis(n, 0);
     stack<int> st;
-    vector<int> vis(n,0);
-
-    for(int i = 0; i<n; i++) if(!vis[i]) toposort(i,adj,vis,st);
-
-    vector<int> distance(n, 1e9);
-    distance[0] = 0;
-
-    while(!st.empty()){
-        int node = st.top();
-        st.pop();
-        for(auto it: adj[node]){
-            if(distance[node] + it.second < distance[it.first]) 
-                distance[it.first] = distance[node] + it.second;
+    for(int i = 0; i<n; i++){
+        if(!vis[i]){
+            topologicalSort(i, adj, vis, st);
         }
     }
 
-    for(int i = 0; i<n; i++)
-        if(distance[i]==1e9) distance[i] = -1;
+    vector<int> dist(n, 1e9);
+    dist[0] = 0;
+    while(!st.empty()){
+        int node = st.top();
+        st.pop();
 
-    return distance;
+        for(auto it: adj[node]){
+            int v = it.first;
+            int wt = it.second;
+            if(wt + dist[node] < dist[v]){
+                dist[v] = wt + dist[node];
+            }
+        }
+    }
+    return dist;
 }
 
 int main() {
