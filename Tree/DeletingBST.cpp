@@ -113,7 +113,7 @@ int main(){
     Inorder(root);
     cout<<endl;
 
-    root = Delete(root, 50);
+    root = Delete(root, 20);
     Inorder(root);
     cout<<endl;
 

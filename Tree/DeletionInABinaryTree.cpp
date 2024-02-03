@@ -26,17 +26,17 @@ void Inorder(TreeNode *root){
 
 // During Traversal, it keeps track of the deepest node 'temp', the node to be deleted 'key_node', and the parent of the deepest node 'last'
 
-
 TreeNode* Deletion(TreeNode *root, int key){
     if(root==NULL){
         return NULL;
     }
     if(root->left == NULL && root->right == NULL){
         if(root->key == key){
+            delete root;
             return NULL;
         }
         else{
-            return NULL;
+            return root;
         }
     }
     
@@ -61,14 +61,36 @@ TreeNode* Deletion(TreeNode *root, int key){
             last = temp;  // Storing the parent node
             q.push(temp->right);
         }
-        if (key_node != NULL) {
-            key_node->key = temp->key;   // Replacing the key node's data to deepest node's data
-        }
     }
 
+    if (key_node != NULL) {
+        key_node->key = temp->key;   // Replacing the key node's data to deepest node's data
+        if(last->left == temp) last->left = NULL;
+        else if(last->right == temp) last->right = NULL;
+        delete temp; // Deleting the deepest node
+    }
+
+    return root;
 }
 
 
 int main() {
+    TreeNode *root = new TreeNode(1);
+    root->left = new TreeNode(2);
+    root->right = new TreeNode(3);
+    root->left->left = new TreeNode(4);
+    root->left->right = new TreeNode(5);
+
+    cout << "Inorder traversal before deletion: ";
+    Inorder(root);
+    cout << endl;
+
+    int key = 2;
+    root = Deletion(root, key);
+
+    cout << "Inorder traversal after deletion of " << key << ": ";
+    Inorder(root);
+    cout << endl;
+
     return 0;
 }

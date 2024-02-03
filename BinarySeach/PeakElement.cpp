@@ -24,7 +24,7 @@ int findPeakElement(vector<int>& nums) {
         else if(nums[mid]<minpu){
             s = mid + 1;
         }
-        else if(minpl>nums[mid]){
+        else if(nums[mid]<minpl){
             e = mid - 1;
         }
     }
