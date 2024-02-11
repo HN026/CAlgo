@@ -3,3 +3,4 @@
 !*.cpp
 !.gitignore
 test.cpp
+!questions.txt
