@@ -5,10 +5,10 @@
 https://leetcode.com/problems/climbing-stairs/ -> Done
 https://leetcode.com/problems/best-time-to-buy-and-sell-stock/ -> Done
 https://leetcode.com/problems/min-cost-climbing-stairs/ ->Done
-https://leetcode.com/problems/divisor-game/
+https://leetcode.com/problems/divisor-game/ -> Done
 https://leetcode.com/problems/decode-ways/
 https://leetcode.com/problems/unique-binary-search-trees/
-https://leetcode.com/problems/house-robber/
+https://leetcode.com/problems/house-robber/ -> Done
 https://leetcode.com/problems/perfect-squares/ -> Done
 https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-cooldown/
 https://leetcode.com/problems/coin-change/
@@ -252,6 +252,7 @@ https://leetcode.com/problems/k-inverse-pairs-array/
 
 https://leetcode.com/problems/cheapest-flights-within-k-stops/
 https://leetcode.com/problems/find-the-shortest-superstring/
+https://leetcode.com/problems/count-visited-nodes-in-a-directed-graph/ -> Done
 
 14.Memoization
 
