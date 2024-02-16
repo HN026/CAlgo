@@ -10,7 +10,7 @@ int MCM(vector<int> &arr, int n ){
             int mini = 1e9;
             for(int k = i; k<j; k++){
                 int steps = arr[i-1]*arr[k]*arr[j] + dp[i][k] + dp[k+1][j];
-                if(steps<mini) mini = steps;
+                mini = min(mini, steps);
             }
             dp[i][j] = mini;
         }
@@ -19,7 +19,7 @@ int MCM(vector<int> &arr, int n ){
 }
 
 int main(){
-    vector<int> arr = {10, 15, 20, 25};
+    vector<int> arr = {2,1,3,4,5};
     int n = arr.size();
     int ans = MCM(arr, n);
     cout<<ans<<endl;
