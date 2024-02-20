@@ -11,7 +11,7 @@ void solve(int col, vector<string> &board, vector<vector<string>> &ans, vector<i
 
     for (int row = 0; row < n; row++) {
         if (!leftRow[row] && !lowerDiagonal[row + col] && !upperDiagonal[n - 1 + col - row]) {
-            board[row][col] = 'Q';
+            board[row][col] = 'Q'; 
             leftRow[row] = 1;
             lowerDiagonal[row + col] = 1;
             upperDiagonal[n - 1 + col - row] = 1;

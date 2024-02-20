@@ -4,3 +4,4 @@
 !.gitignore
 test.cpp
 !questions.txt
+!.clang-format
