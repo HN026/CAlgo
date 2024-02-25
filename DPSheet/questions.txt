@@ -181,13 +181,13 @@ https://leetcode.com/problems/largest-divisible-subset/ -> Done
 https://leetcode.com/problems/length-of-longest-fibonacci-subsequence/
 
 B.LCS
-https://leetcode.com/problems/longest-palindromic-substring/
+https://leetcode.com/problems/longest-palindromic-substring/ 
 https://leetcode.com/problems/longest-palindromic-subsequence/
 https://leetcode.com/problems/maximum-length-of-repeated-subarray/
 https://leetcode.com/problems/longest-common-subsequence/
 https://leetcode.com/problems/regular-expression-matching/
 https://leetcode.com/problems/wildcard-matching/
-https://leetcode.com/problems/edit-distance/
+https://leetcode.com/problems/edit-distance/ -> Done
 https://leetcode.com/problems/interleaving-string/
 https://leetcode.com/problems/shortest-common-supersequence/
 https://leetcode.com/problems/minimum-insertion-steps-to-make-a-string-palindrome/
