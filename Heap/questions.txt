@@ -1,1 +1,2 @@
 1. https://leetcode.com/problems/furthest-building-you-can-reach
+2. https://leetcode.com/problems/single-threaded-cpu
