@@ -7,6 +7,7 @@ string LPS(string s){
     int n = s.size();
 
     vector<vector<int>> dp(n, vector<int> (n, 0));
+    // dp[i][j] represents substring from i -> j is palindrome or not
     int maxlen = 1;
     
     // For substring length 1
@@ -39,7 +40,7 @@ string LPS(string s){
         }
     }
 
-    string ans = s.substr(start, start+maxlen-1);
+    string ans = s.substr(start, maxlen);
     return ans;
 }   
 
