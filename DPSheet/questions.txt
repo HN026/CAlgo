@@ -43,7 +43,7 @@ https://leetcode.com/problems/coin-change-2/
 2.Knapsack
 
 https://leetcode.com/problems/house-robber-ii/
-https://leetcode.com/problems/ones-and-zeroes/
+https://leetcode.com/problems/ones-and-zeroes/ -> Done
 https://leetcode.com/problems/target-sum/
 https://leetcode.com/problems/shopping-offers/
 https://leetcode.com/problems/2-keys-keyboard/
@@ -141,10 +141,10 @@ https://leetcode.com/problems/number-of-ways-to-reorder-array-to-get-same-bst/
 
 8.String DP
 
-https://leetcode.com/problems/is-subsequence/
-https://leetcode.com/problems/palindrome-partitioning/
-https://leetcode.com/problems/palindrome-partitioning-ii/
-https://leetcode.com/problems/word-break/
+https://leetcode.com/problems/is-subsequence/ -> Done
+https://leetcode.com/problems/palindrome-partitioning/  -> Done
+https://leetcode.com/problems/palindrome-partitioning-ii/ -> Done
+https://leetcode.com/problems/word-break/ -> Done
 https://leetcode.com/problems/unique-substrings-in-wraparound-string/
 https://leetcode.com/problems/minimum-ascii-delete-sum-for-two-strings/
 https://leetcode.com/problems/longest-string-chain/
@@ -181,10 +181,10 @@ https://leetcode.com/problems/largest-divisible-subset/ -> Done
 https://leetcode.com/problems/length-of-longest-fibonacci-subsequence/
 
 B.LCS
-https://leetcode.com/problems/longest-palindromic-substring/ 
-https://leetcode.com/problems/longest-palindromic-subsequence/
-https://leetcode.com/problems/maximum-length-of-repeated-subarray/
-https://leetcode.com/problems/longest-common-subsequence/
+https://leetcode.com/problems/longest-palindromic-substring/ -> Done
+https://leetcode.com/problems/longest-palindromic-subsequence/ -> Done
+https://leetcode.com/problems/maximum-length-of-repeated-subarray/ -> Done
+https://leetcode.com/problems/longest-common-subsequence/ -> Done
 https://leetcode.com/problems/regular-expression-matching/
 https://leetcode.com/problems/wildcard-matching/
 https://leetcode.com/problems/edit-distance/ -> Done
@@ -194,9 +194,9 @@ https://leetcode.com/problems/minimum-insertion-steps-to-make-a-string-palindrom
 https://leetcode.com/problems/max-dot-product-of-two-subsequences/
 
 C.LIS
-https://leetcode.com/problems/longest-increasing-subsequence/
-https://leetcode.com/problems/number-of-longest-increasing-subsequence/
-https://leetcode.com/problems/russian-doll-envelopes/
+https://leetcode.com/problems/longest-increasing-subsequence/ -> Done
+https://leetcode.com/problems/number-of-longest-increasing-subsequence/ -> Done
+https://leetcode.com/problems/russian-doll-envelopes/ -> Done
 https://leetcode.com/problems/delete-columns-to-make-sorted-iii/
 https://leetcode.com/problems/minimum-number-of-removals-to-make-mountain-array/
 https://leetcode.com/problems/maximum-height-by-stacking-cuboids/
@@ -253,10 +253,12 @@ https://leetcode.com/problems/k-inverse-pairs-array/
 https://leetcode.com/problems/cheapest-flights-within-k-stops/
 https://leetcode.com/problems/find-the-shortest-superstring/
 https://leetcode.com/problems/count-visited-nodes-in-a-directed-graph/ -> Done
+https://leetcode.com/problems/longest-increasing-path-in-a-matrix/ -> Done
+https://leetcode.com/problems/number-of-restricted-paths-from-first-to-last-node -> Done
 
 14.Memoization
 
-https://leetcode.com/problems/minimum-jumps-to-reach-home/
+https://leetcode.com/problems/minimum-jumps-to-reach-home/ -> Done
 https://leetcode.com/problems/scramble-string/
 https://leetcode.com/problems/tiling-a-rectangle-with-the-fewest-squares/
 https://leetcode.com/problems/number-of-ways-to-stay-in-the-same-place-after-some-steps/
