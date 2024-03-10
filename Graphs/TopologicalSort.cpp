@@ -35,7 +35,7 @@ vector<int> TopologicalSort(int V, vector<int> adj[]){
 
 int main(){
     int V = 6;
-    vector<int> adj[V] = {
+    vector<vector<int>> adj[V] = {
         {},
         {},
         {3},
