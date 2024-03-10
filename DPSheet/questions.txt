@@ -138,6 +138,7 @@ https://leetcode.com/problems/longest-zigzag-path-in-a-binary-tree/
 https://leetcode.com/problems/binary-tree-cameras/
 https://leetcode.com/problems/maximum-sum-bst-in-binary-tree/
 https://leetcode.com/problems/number-of-ways-to-reorder-array-to-get-same-bst/
+https://leetcode.com/problems/find-the-maximum-sum-of-node-values -> Done
 
 8.String DP
 
@@ -255,6 +256,7 @@ https://leetcode.com/problems/find-the-shortest-superstring/
 https://leetcode.com/problems/count-visited-nodes-in-a-directed-graph/ -> Done
 https://leetcode.com/problems/longest-increasing-path-in-a-matrix/ -> Done
 https://leetcode.com/problems/number-of-restricted-paths-from-first-to-last-node -> Done
+https://leetcode.com/problems/minimum-path-cost-in-a-grid/ -> Done
 
 14.Memoization
 
