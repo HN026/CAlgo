@@ -60,7 +60,7 @@ https://leetcode.com/problems/triangle/
 https://leetcode.com/problems/combination-sum-iv/
 https://leetcode.com/problems/out-of-boundary-paths/
 https://leetcode.com/problems/knight-probability-in-chessboard/
-https://leetcode.com/problems/champagne-tower/
+https://leetcode.com/problems/champagne-tower/ -> Done
 https://leetcode.com/problems/largest-sum-of-averages/
 https://leetcode.com/problems/minimum-falling-path-sum/
 https://leetcode.com/problems/video-stitching/
@@ -280,3 +280,7 @@ https://leetcode.com/problems/super-egg-drop/
 https://leetcode.com/problems/least-operators-to-express-number/
 https://leetcode.com/problems/largest-multiple-of-three/
 https://leetcode.com/problems/minimum-one-bit-operations-to-make-integers-zero/
+
+17.GrandMaster
+
+https://leetcode.com/problems/maximum-strength-of-k-disjoint-subarrays/ -> Done
