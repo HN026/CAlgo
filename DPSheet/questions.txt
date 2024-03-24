@@ -147,8 +147,8 @@ https://leetcode.com/problems/palindrome-partitioning/  -> Done
 https://leetcode.com/problems/palindrome-partitioning-ii/ -> Done
 https://leetcode.com/problems/word-break/ -> Done
 https://leetcode.com/problems/unique-substrings-in-wraparound-string/
-https://leetcode.com/problems/minimum-ascii-delete-sum-for-two-strings/
-https://leetcode.com/problems/longest-string-chain/
+https://leetcode.com/problems/minimum-ascii-delete-sum-for-two-strings/ -> Done
+https://leetcode.com/problems/longest-string-chain/ -> Done
 https://leetcode.com/problems/longest-happy-string/
 https://leetcode.com/problems/longest-valid-parentheses/
 https://leetcode.com/problems/distinct-subsequences/
