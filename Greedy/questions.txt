@@ -20,14 +20,14 @@
 20. https://leetcode.com/problems/jump-game/
 21. https://leetcode.com/problems/remove-k-digits/
 22. https://leetcode.com/problems/wiggle-subsequence/
-23. https://leetcode.com/problems/assign-cookies/
+23. https://leetcode.com/problems/assign-cookies/ -> Done
 24. https://leetcode.com/problems/bag-of-tokens/ -> Done
 25. https://leetcode.com/problems/number-of-burgers-with-no-waste-of-ingredients/
 26. https://leetcode.com/problems/queue-reconstruction-by-height/
 27. https://leetcode.com/problems/play-with-chips/
 28. https://leetcode.com/problems/previous-permutation-with-one-swap/
 29. https://leetcode.com/problems/lemonade-change/ ->Done
-30. https://leetcode.com/problems/task-scheduler/
+30. https://leetcode.com/problems/task-scheduler/ -> Done
 31. https://leetcode.com/problems/partition-labels/
 32. https://leetcode.com/problems/car-pooling/
 33. https://leetcode.com/problems/divide-array-in-sets-of-k-consecutive-numbers/
