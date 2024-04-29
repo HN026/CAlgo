@@ -56,10 +56,10 @@ https://leetcode.com/problems/reducing-dishes/
 
 3.Multi Dimensions DP
 
-https://leetcode.com/problems/triangle/
-https://leetcode.com/problems/combination-sum-iv/
-https://leetcode.com/problems/out-of-boundary-paths/
-https://leetcode.com/problems/knight-probability-in-chessboard/
+https://leetcode.com/problems/triangle/ -> Done
+https://leetcode.com/problems/combination-sum-iv/ -> Done
+https://leetcode.com/problems/out-of-boundary-paths/ -> Done
+https://leetcode.com/problems/knight-probability-in-chessboard/ -> Done
 https://leetcode.com/problems/champagne-tower/ -> Done
 https://leetcode.com/problems/largest-sum-of-averages/
 https://leetcode.com/problems/minimum-falling-path-sum/
@@ -209,7 +209,7 @@ https://leetcode.com/problems/unique-paths-ii/ -> Done
 https://leetcode.com/problems/minimum-path-sum/ -> Done
 https://leetcode.com/problems/maximum-non-negative-product-in-a-matrix/ -> Done
 https://leetcode.com/problems/where-will-the-ball-fall/
-https://leetcode.com/problems/dungeon-game/
+https://leetcode.com/problems/dungeon-game/ -> Done
 https://leetcode.com/problems/cherry-pickup/
 https://leetcode.com/problems/number-of-paths-with-max-score/
 https://leetcode.com/problems/kth-smallest-instructions/
@@ -261,7 +261,7 @@ https://leetcode.com/problems/minimum-path-cost-in-a-grid/ -> Done
 14.Memoization
 
 https://leetcode.com/problems/minimum-jumps-to-reach-home/ -> Done
-https://leetcode.com/problems/scramble-string/
+https://leetcode.com/problems/scramble-string/ -> Done
 https://leetcode.com/problems/tiling-a-rectangle-with-the-fewest-squares/
 https://leetcode.com/problems/number-of-ways-to-stay-in-the-same-place-after-some-steps/
 https://leetcode.com/problems/jump-game-v/
