@@ -66,10 +66,6 @@ void solve(vector<vector<char>> &board){
     }
 }
 
-
-
-
-
 int main(){
 
     vector<vector<char>> board {
