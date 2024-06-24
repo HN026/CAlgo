@@ -6,14 +6,14 @@ https://leetcode.com/problems/climbing-stairs/ -> Done
 https://leetcode.com/problems/best-time-to-buy-and-sell-stock/ -> Done
 https://leetcode.com/problems/min-cost-climbing-stairs/ ->Done
 https://leetcode.com/problems/divisor-game/ -> Done
-https://leetcode.com/problems/decode-ways/
-https://leetcode.com/problems/unique-binary-search-trees/
+https://leetcode.com/problems/decode-ways/ -> Done
+https://leetcode.com/problems/unique-binary-search-trees/ -> Done
 https://leetcode.com/problems/house-robber/ -> Done
 https://leetcode.com/problems/perfect-squares/ -> Done
-https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-cooldown/
-https://leetcode.com/problems/coin-change/
-https://leetcode.com/problems/counting-bits/
-https://leetcode.com/problems/integer-break/
+https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-cooldown  -> Done
+https://leetcode.com/problems/coin-change/ -> Done
+https://leetcode.com/problems/counting-bits/ -> Done
+https://leetcode.com/problems/integer-break/ -> Done 
 https://leetcode.com/problems/count-numbers-with-unique-digits/
 https://leetcode.com/problems/wiggle-subsequence/
 https://leetcode.com/problems/partition-equal-subset-sum/
@@ -71,7 +71,7 @@ https://leetcode.com/problems/dice-roll-simulation/
 https://leetcode.com/problems/number-of-sets-of-k-non-overlapping-line-segments/
 https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iv/
 https://leetcode.com/problems/create-maximum-number/
-https://leetcode.com/problems/frog-jump/
+https://leetcode.com/problems/frog-jump/ -> Done
 https://leetcode.com/problems/split-array-largest-sum/
 https://leetcode.com/problems/freedom-trail/
 https://leetcode.com/problems/minimum-number-of-refueling-stops/

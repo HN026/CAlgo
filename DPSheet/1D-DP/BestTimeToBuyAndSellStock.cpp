@@ -1,27 +1,31 @@
-#include <bits/stdc++.h>
+#include <iostream>
+#include <vector>
+#include <climits>
 
 using namespace std;
 
-int bestTime(vector<int> &prices){
-    int mini = prices[0];    
-    int maxProfit = 0;
+class Solution {
+public:
+    int maxProfit(vector<int>& prices) {
+        int n = prices.size();
 
-    int n = prices.size();
+        int maxProfit = INT_MIN;
+        int minI = INT_MAX;
+        for(int i = 0; i<n; i++){
+            if(prices[i]<minI){
+                minI = prices[i];
+                continue;
+            }
+            maxProfit = max(maxProfit, prices[i] - minI);
+        }
 
-    for(int i = 1; i<n; i++){
-        int cost = prices[i] - mini;
-        maxProfit = max(maxProfit, cost);
-        mini = min(mini, prices[i]);
+        return maxProfit == INT_MIN ? 0 : maxProfit;
     }
-
-    return maxProfit;
-}
+};
 
 int main(){
-    vector<int> prices = {2, 100, 150, 120};
-
-    int minPrices = bestTime(prices);
-    cout<<minPrices<<endl;
-
+    Solution sol = Solution();
+    vector<int> prices = {7,1,5,3,6,4};
+    cout<<sol.maxProfit(prices)<<endl;
     return 0;
 }
