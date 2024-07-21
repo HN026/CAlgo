@@ -11,14 +11,13 @@ struct TreeNode{
 };
 
 TreeNode* LCA(TreeNode *root, TreeNode *p, TreeNode *q){
-    if(!root || root->left == p || root->right == q) return root;
+    if(!root || root->val == p->val || root->val == q->val) return root;
 
     TreeNode *left = LCA(root->left, p, q);
     TreeNode *right = LCA(root->right, p, q);
 
-    if(!left) return right;
-    if(!right) return left;
-    return root;
+    if(left && right) return root;
+    return left ? left : right;
 }
 
 int main(){
