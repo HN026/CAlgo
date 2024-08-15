@@ -1,11 +1,21 @@
 #include <iostream>
+#include <unordered_map>
 
 using namespace std;
 
 bool doremysPaint3(int n, int* a){
-    if(n==2) return true;
-    
-    return false;
+    unordered_map<int, int> mp;
+    for(int i = 0; i<n; i++){
+        mp[a[i]]++;
+        if(mp.size() > 2) return false;
+    }
+
+    if(mp.size() == 2){
+        int it = mp.begin()->second;
+        if(it != n/2 && it!=(n+1)/2) return false;
+    }
+
+    return true;
 }
 
 int main(){
