@@ -61,6 +61,11 @@ string findOrder(string dict[], int N, int K){
 	return ans;
 }
 
+// b->a,d
+// a->b,c
+// d->a
+// c->b
+
 
 int main() {
 	int N = 5, K = 4;

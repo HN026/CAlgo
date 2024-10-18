@@ -186,7 +186,7 @@ https://leetcode.com/problems/longest-palindromic-substring/ -> Done
 https://leetcode.com/problems/longest-palindromic-subsequence/ -> Done
 https://leetcode.com/problems/maximum-length-of-repeated-subarray/ -> Done
 https://leetcode.com/problems/longest-common-subsequence/ -> Done
-https://leetcode.com/problems/regular-expression-matching/
+https://leetcode.com/problems/regular-expression-matching/ -> Done
 https://leetcode.com/problems/wildcard-matching/ -> Done
 https://leetcode.com/problems/edit-distance/ -> Done
 https://leetcode.com/problems/interleaving-string/
@@ -213,6 +213,7 @@ https://leetcode.com/problems/dungeon-game/ -> Done
 https://leetcode.com/problems/cherry-pickup/
 https://leetcode.com/problems/number-of-paths-with-max-score/
 https://leetcode.com/problems/kth-smallest-instructions/
+https://leetcode.com/problems/maximum-number-of-points-with-cost/ -> Done
 
 E.Cumulative Sum
 https://leetcode.com/problems/range-sum-query-immutable/

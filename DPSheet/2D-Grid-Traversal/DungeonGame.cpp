@@ -42,7 +42,8 @@ class Solution {
 
     int calculateMinimumHP(vector<vector<int>> &dungeon) {
         int s = 1;
-        int e = 1e5;
+        
+        
         while (s <= e) {
             int mid = s + (e - s) / 2;
 
